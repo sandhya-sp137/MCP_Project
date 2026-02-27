@@ -1,4 +1,4 @@
-# 🎓 Students Analytics Dashboard
+# 🎓 Students Analytics Dashboard USing MCP Server Integration
 
 > A Modern Student Data Analytics Dashboard built using **Streamlit** and **FastMCP (MCP Server Integration)**.
 
