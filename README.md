@@ -1,137 +1,205 @@
-🎓 Students Analytics Dashboard (MCP + Streamlit)
+# 🎓 Students Analytics Dashboard
 
-A modern interactive Students Data Analytics Dashboard built using Streamlit and FastMCP.
-This project allows users to load student data, analyze it using MCP tools, and interact with the dataset through a chatbot interface.
+> A Modern Student Data Analytics Dashboard built using **Streamlit** and **FastMCP (MCP Server Integration)**.
 
-🚀 Features
+---
 
-📊 Sidebar Data Control Panel
+## 📌 Overview
 
-🟣 Custom Styled "Student Data Controls" Button
+The **Students Analytics Dashboard** is an interactive web application that allows users to:
 
-⏳ Spinner While Loading Data
+- Load student data
+- Perform analytics using MCP tools
+- Interact through a chatbot interface
+- View KPI metrics
+- Manage chat history
 
-✅ Success Confirmation Message
+This project demonstrates integration between **Streamlit (Frontend UI)** and **FastMCP (Backend Tool Calling Server)**.
 
-📈 KPI Metrics Section (Total Students, Average GPA, Departments)
+---
 
-💬 Chat-Based Query System
+## 🚀 Features
 
-🧠 MCP Tool Integration for Data Analysis
+- 🟣 Custom Styled Sidebar Control Panel
+- 📊 "Student Data Controls" Clickable Loader
+- ⏳ Spinner Animation While Loading
+- ✅ Success Confirmation Message
+- 📈 KPI Metrics Cards
+- 💬 Chat-Based Query System
+- 🧠 MCP Tool Integration
+- 🗑️ Clear Chat History
+- 🎨 Clean Dashboard Layout
 
-🗑️ Clear Chat History Option
+---
 
-🎨 Clean Dashboard UI
+## 🏗️ Project Structure
 
-🏗️ Project Structure
+```bash
 project-folder/
 │
-├── streamlit_chatbot.py   # Main Streamlit App
-├── requirements.txt       # Dependencies
-└── README.md              # Project Documentation
-⚙️ Installation
-1️⃣ Clone the Repository
-git clone <your-repo-url>
-cd project-folder
-2️⃣ Create Virtual Environment (Recommended)
+├── streamlit_chatbot.py   # Main Streamlit Application
+├── main.py                # MCP Server (FastMCP tools)
+├── requirements.txt       # Project Dependencies
+└── README.md              # Documentation
+```
+
+---
+
+## ⚙️ Installation Guide
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/students-analytics-dashboard.git
+cd students-analytics-dashboard
+```
+
+### 2️⃣ Create Virtual Environment (Recommended)
+
+```bash
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate    # Windows
-3️⃣ Install Dependencies
+```
+
+Activate environment:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux**
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-📦 Required Libraries
+```
 
-Make sure your requirements.txt includes:
+---
 
+## 📦 Requirements
+
+Example `requirements.txt`:
+
+```txt
 streamlit
 fastmcp
-asyncio
+uvicorn
 matplotlib
-▶️ Running the Application
+```
 
-Start your MCP server first:
+---
 
+## ▶️ Running the Application
+
+### Step 1: Start MCP Server
+
+```bash
 uvicorn main:app --reload
+```
 
-Then run the Streamlit app:
+MCP Server runs at:
 
+```
+http://localhost:8000/mcp
+```
+
+---
+
+### Step 2: Run Streamlit App
+
+```bash
 streamlit run streamlit_chatbot.py
+```
 
-The app will open in your browser automatically.
+The application will open in your browser.
 
-💬 Example Queries
+---
 
-You can ask:
+## 💬 Example Queries
 
-Total number of students
+You can ask the chatbot:
 
-Average GPA
+- Total number of students
+- Average GPA
+- Students per department
+- Top GPA students
+- Graduation year distribution
+- Youngest student
+- Oldest student
 
-Students per department
+---
 
-Top GPA students
+## 🧠 How It Works
 
-Graduation year distribution
+1. User clicks **Student Data Controls** in sidebar.
+2. Spinner shows loading state.
+3. Success message confirms data loading.
+4. User submits a query.
+5. Query maps to appropriate MCP tool.
+6. MCP server processes the request.
+7. Response is displayed in chat format.
 
-Youngest student
+---
 
-Oldest student
+## 🎨 UI Layout
 
-🧠 How It Works
+### 🔹 Sidebar
+- Student Data Controls Button
+- Example Questions
+- Clear History Button
 
-User clicks Student Data Controls to load data.
+### 🔹 Main Dashboard
+- Dashboard Header
+- KPI Metrics Row
+- Chat Interface
 
-Data loading spinner appears.
+---
 
-Success message confirms loading.
+## 🔮 Future Enhancements
 
-User enters a query in chat.
+- 📊 Interactive Charts (Plotly)
+- 🎯 Advanced Filtering
+- 🔐 Authentication System
+- 📈 Real-Time Data Updates
+- 📤 Export Reports (PDF/Excel)
+- 🌍 Cloud Deployment (Streamlit Cloud / AWS / Render)
 
-Query is matched to MCP tool.
+---
 
-MCP processes request.
+## 🛠️ Tech Stack
 
-Response is displayed in chat format.
+- Python
+- Streamlit
+- FastMCP
+- Uvicorn
+- Asyncio
+- Matplotlib (Optional for Charts)
 
-🎨 UI Overview
-Sidebar
+---
 
-Student Data Controls
+## 📷 Screenshots
 
-Example Questions
+_Add dashboard screenshots here after deployment._
 
-Clear History Button
+---
 
-Main Dashboard
+## 📄 License
 
-Dashboard Header
+This project is developed for educational and learning purposes.
 
-KPI Metrics
+---
 
-Chat Interface
+## 👨‍💻 Author
 
-🔮 Future Improvements
+Built as a Student Data Analytics Dashboard Project.
 
-📊 Interactive Charts (Plotly)
+---
 
-🎯 Smart Filters
+⭐ If you like this project, consider giving it a star on GitHub!
 
-🔐 Authentication System
-
-📈 Real-time Data Refresh
-
-📤 Export Reports (PDF/Excel)
-
-🌍 Cloud Deployment
-
-🛠️ Tech Stack
-
-Python
-
-Streamlit
-
-FastMCP
-
-Asyncio
-
-Matplotlib (optional for charts)
