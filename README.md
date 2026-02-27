@@ -183,23 +183,3 @@ You can ask the chatbot:
 
 ---
 
-## 📷 Screenshots
-
-_Add dashboard screenshots here after deployment._
-
----
-
-## 📄 License
-
-This project is developed for educational and learning purposes.
-
----
-
-## 👨‍💻 Author
-
-Built as a Student Data Analytics Dashboard Project.
-
----
-
-⭐ If you like this project, consider giving it a star on GitHub!
-
